@@ -1,4 +1,4 @@
-Hands-on material for session "Apache Kafka simply explained" (Typescript version)
+Hands-on material for session "Apache Kafka simply explained" (TypeScript version)
 ==================================================================================
 
 Hello all! This repository contains a set of short exercises to get familiar with Apache Kafka. You'll need to do a couple of setup steps and then you can run examples of producers and consumers that I've preapared for you.
