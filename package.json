@@ -1,0 +1,38 @@
+{
+  "name": "kafka-first-steps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "produce": "npm run build && node build/producer.js",
+    "produce-with-keys": "npm run build && node build/producer-keys.js",
+    "consume": "npm run build && node build/consumer.js",
+    "consume-show-partitions": "npm run build && node build/consumer-partitions.js",
+    "consume-only-judy": "npm run build && node build/consumer-filter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anelook/kafka-first-steps-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anelook/kafka-first-steps-js/issues"
+  },
+  "homepage": "https://github.com/anelook/kafka-first-steps-js#readme",
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-rdkafka": "^2.16.0"
+  }
+}
