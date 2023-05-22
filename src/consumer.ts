@@ -14,9 +14,5 @@ const stream = new Kafka.createReadStream({
 
 stream.on('data', (chunk: any) => {
     // process message
-    console.log(JSON.stringify(chunk));
-    console.log('received', chunk.value.toString());
-    console.log('received', chunk.partition.toString());
-    console.log('received', chunk.offset.toString());
-    console.log('received', chunk.key.toString());
+    console.log("received message:", chunk.value.toString());
 });
